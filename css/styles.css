@@ -7,16 +7,28 @@
     text-decoration: none;
     list-style: none;
     font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main__section {
+    margin-top: 50px !important;
 }
 
 .bg-blue {
-    background-color: rgb(194, 233, 255);
+    background-color: rgb(211, 239, 255);
     border-radius: 50px 20px;
 }
 
 .center {
     text-align: center;
     padding: 1rem 0;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.849);
+    width: 100%;
 }
 
 .header__nav {
@@ -67,7 +79,7 @@
 }
 
 .introduce__text--container {
-    width: 50%;
+    width: 70%;
 }
 
 .introduce__photo {
@@ -79,22 +91,63 @@
 }
 
 .introduce__text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .section__aboutme {
     width: 90%;
+    padding: 1rem 0;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+.skills_hobbies__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+}
+
+.skill_hobbies__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 15%;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(184, 182, 182);
+    border-radius: 15px;
+
+}
+
+.skill__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: contain;
+}
+
 .section__academic {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
+}
+
+figure {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 0px 0px 15px 15px;
+    background-color: cornflowerblue;
 }
 
 .academic__figure {
@@ -103,7 +156,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid black;
 }
 
 .figure__img {
@@ -111,3 +163,109 @@
     object-fit: cover;
     aspect-ratio: 1;
 }
+
+.section__experience {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    background-color: rgb(211, 239, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+    border-radius: 15px;
+}
+
+.project__img {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 5px;
+    width: 100%;
+}
+
+.project__buton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: white;
+    background-color: rgb(70, 144, 255);
+    width: fit-content;
+    padding: .5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button__img {
+    width: 24px !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav__list {
+        display: none;
+    }
+
+    .section__introduce {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__section {
+        width: 100%;
+    }
+
+    .introduce__text--container {
+        order: 2;
+        width: 100%;
+    }
+
+    .introduce__text {
+        font-size: 1.5rem;
+    }
+
+    .introduce__photo {
+        width: 50%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .skills_hobbies__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skill_hobbies__card {
+        width: 50%;
+    }
+
+    .section__academic  {
+        gap: 15px;
+        flex-direction: column !important;
+    }
+
+    .academic__figure {
+        width: 80%;
+    }
+
+    .section__experience {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project__card {
+        width: 90%;
+        margin: auto;
+    }
+
+  }
